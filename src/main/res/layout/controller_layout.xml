@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:neusoft="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <Button
+        android:id="@+id/power"
+        android:layout_width="46dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/power2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:stateListAnimator="@null"/>
+
+    <ImageView
+        android:id="@+id/set"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_set"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+    <com.example.uavcontroller.View.Rocker
+        android:id="@+id/id_rocker"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+        <com.example.uavcontroller.View.Rocker2
+            android:id="@+id/id_rocker2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            />
+
+    </LinearLayout>
+    <com.example.uavcontroller.View.Speedometer
+        android:id="@+id/id_speedometer"
+        neusoft:speedometer_background="@drawable/ic_speedometer"
+        neusoft:speedometer_flag="@drawable/ic_pe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white2"
+        android:visibility="gone">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.uavcontroller.View.SwitchView
+            neusoft:switch_background = "@drawable/switch_background"
+            neusoft:slide_button = "@drawable/slide_button"
+            neusoft:switch_state="false"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/switchview"
+            android:padding="10dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

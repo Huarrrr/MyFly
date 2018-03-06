@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"/>
+    <GridLayout
+        android:id="@+id/pid_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:rowCount="3"
+        android:columnCount="5"
+        android:orientation="horizontal">
+        <TextView android:text="P值"
+            android:layout_marginRight="10dp"
+            />
+        <Button android:text="-"
+            android:id="@+id/p_minus"
+            android:layout_width="50dp"
+            android:layout_gravity="center"/>
+        <EditText android:text="0"
+            android:id="@+id/p_number"
+            android:gravity="center_horizontal"
+            android:layout_width="50dp"
+            android:maxLength="3"
+            android:inputType="phone"/>
+        <Button android:text="+"
+            android:id="@+id/p_plus"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            />
+        <TextView android:text="(0-100)"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView android:text="I值"/>
+        <Button android:text="-"
+            android:id="@+id/i_minus"
+            android:layout_width="50dp"
+            android:layout_gravity="center"/>
+        <EditText android:text="0"
+            android:id="@+id/i_number"
+            android:layout_width="50dp"
+            android:maxLength="3"
+            android:inputType="phone"
+            android:gravity="center_horizontal"
+            />
+        <Button android:text="+"
+            android:id="@+id/i_plus"
+            android:layout_width="50dp"
+            android:layout_gravity="center"/>
+        <TextView android:text="(0-100)"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView android:text="D值"/>
+        <Button android:text="-"
+            android:id="@+id/d_minus"
+            android:layout_width="50dp"
+            android:layout_gravity="center"/>
+        <EditText android:text="0"
+            android:id="@+id/d_number"
+            android:layout_width="50dp"
+            android:maxLength="3"
+            android:inputType="phone"
+            android:gravity="center_horizontal"
+            />
+        <Button android:text="+"
+            android:id="@+id/d_plus"
+            android:layout_width="50dp"
+            android:layout_gravity="center"/>
+        <TextView android:text="(0-100)"
+            android:layout_marginLeft="10dp"
+            />
+
+    </GridLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitchView">
+        <attr name="switch_background" format="reference"/>
+        <attr name="slide_button" format="reference"/>
+        <attr name="switch_state" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="Speedometer">
+        <attr name="speedometer_background" format="reference"/>
+        <attr name="speedometer_flag" format="reference"/>
+    </declare-styleable>
+
+</resources>
